@@ -25,7 +25,7 @@ while True:
 
     if caratteri_lista == []:
         print("\nNon è possibile generare una password senza caratteri, inserire di nuovo i caratteri da escludere.")
-        continue()
+        continue
         
 
     while True:
