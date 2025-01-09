@@ -45,4 +45,6 @@ while True:
 
     print("\nEcco la tua password: ", password)
 
-    input("\nPremi invio per generare una nuova password.")
+    next = input("\nPremi invio per generare una nuova password, scrivi exit per uscire.\n\n")
+    if next == "exit":
+        break
