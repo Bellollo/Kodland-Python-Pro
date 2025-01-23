@@ -1,4 +1,7 @@
-#le immagini arriveranno prossimamente
+#le immagini sono disposte così:
+#images --->normal>meme1, meme2, meme3
+#        |->homemade>my_meme
+
 
 import discord
 from discord.ext import commands
