@@ -51,7 +51,7 @@ async def on_ready():
     print(f'Abbiamo fatto l\'accesso come {bot.user}')
     channel = bot.get_channel(1334577190058201222)
     await channel.send("Ciao! Sono il bot anti-spreco, sono qui per aiutarti a ridurre gli sprechi e a smaltire correttamente i rifiuti. Scrivi /help_me per vedere i comandi disponibili")
-    
+    send_reminder.start()
     
 @tasks.loop(minutes=5)
 async def send_reminder():
