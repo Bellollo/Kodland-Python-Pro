@@ -43,13 +43,12 @@ waste_sorting = {
     "carta_da_forno": False  # Trattata con siliconi
 }
 
-def saluto(ctx):
-    ctx.send("Ciao! Sono il bot anti-spreco, sono qui per aiutarti a ridurre gli sprechi e a smaltire correttamente i rifiuti. Scrivi /help_me per vedere i comandi disponibili")
+
 
 @bot.event
 async def on_ready():
     print(f'Abbiamo fatto l\'accesso come {bot.user}')
-    channel = bot.get_channel(1334577190058201222)
+    channel = bot.get_channel(1334577190058201222) #ID del canale che ho usato nella prova
     await channel.send("Ciao! Sono il bot anti-spreco, sono qui per aiutarti a ridurre gli sprechi e a smaltire correttamente i rifiuti. Scrivi /help_me per vedere i comandi disponibili")
     send_reminder.start()
     
